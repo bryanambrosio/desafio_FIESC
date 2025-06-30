@@ -54,3 +54,17 @@ O **Desafio\_FIESC** consiste em desenvolver um agente conversacional que interp
 * **Consultas complexas**: falta suporte a junções multitas (joins) e filtros dinâmicos genéricos.
 * **Interface**: apenas notebook; como diferencial, pode-se criar UI web (Streamlit, Gradio) com campo de chat e histórico.
 * **Escalabilidade**: o uso de SQLite é adequado para POC, mas para grandes volumes recomenda-se migrar para SGBD mais robusto (PostgreSQL, MySQL).
+
+## Diagrama de Arquitetura
+
+Abaixo, uma representação do fluxo de interação entre os componentes do agente:
+
+![Diagrama de Arquitetura](arquitetura_diagrama.png)
+
+1 - Usuário faz perguntas em linguagem natural.
+
+2 - A UI (notebook ou web) recebe e exibe tanto a pergunta quanto a resposta.
+
+3 - O Parser NL→SQL traduz NL em SQL, consultando e atualizando a Memória de Contexto para manter o histórico de entidades (como último ID de ordem).
+
+4 - O Executor SQL recebe a query pronta e a executa no SQLite Database, retornando os resultados para a UI
