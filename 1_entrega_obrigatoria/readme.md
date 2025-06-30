@@ -66,7 +66,9 @@ Abaixo, uma representação do fluxo de interação entre os componentes do agen
 2 - A UI (notebook ou web) recebe e exibe tanto a pergunta quanto a resposta;
 
 3 - O Parser NL→SQL traduz NL em SQL.
+
    3.1 - Versão básica (notebook obrigatório): apenas regras de conversão NL → SQL.
+   
    3.2 - Versão avançada (entrega adicional): também consulta / atualiza a Memória de Contexto (ex.: guarda o último ID de ordem) para responder perguntas encadeadas.
    
 4 - O Executor SQL recebe a query pronta e a executa no SQLite Database, retornando os resultados para a UI.
