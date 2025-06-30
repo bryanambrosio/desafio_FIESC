@@ -39,7 +39,6 @@ streamlit run app.py
 
 # Perguntas de Teste Sugeridas
 
-Memória de Contexto
 Quem trabalhou na ordem 3?
 
 Qual a especialidade dele?
