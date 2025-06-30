@@ -9,7 +9,7 @@ O **Desafio\_FIESC** consiste em desenvolver um agente conversacional que interp
 1. **Clone o repositório**:
 
    ```bash
-   git clone https://github.com/seu-usuario/desafio_FIESC.git
+   git clone https://github.com/bryanambrosio/desafio_FIESC.git
    cd desafio_FIESC
    ```
 
