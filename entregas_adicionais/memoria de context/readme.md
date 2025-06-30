@@ -12,23 +12,23 @@ Esta pasta contém a **interface web** do Desafio_FIESC, desenvolvida em [Stream
   ```
 
 ### 2. Ative o ambiente Python já configurado (recomenda-se o mesmo usado no notebook):
-
+   ```bash
 conda activate desafio_FIESC
-
+  ```
 ### 3. ou, se usar virtualenv:
-
+   ```bash
 source venv/bin/activate   # Windows: venv\Scripts\activate
-
+  ```
 ### 4. Instale as dependências necessárias:
-
+   ```bash
 pip install -r requirements.txt
-
+  ```
 ### 5. Certifique-se de que o arquivo manutencao_industrial.db está nesta mesma pasta.
 
 ### 6. Execute o app:
-
+   ```bash
 streamlit run app.py
-
+  ```
 ### 7. O aplicativo estará disponível em http://localhost:8501.
 
 
