@@ -52,8 +52,6 @@ O **Desafio\_FIESC** consiste em desenvolver um agente conversacional que interp
 * **Regras estáticas**: o parser utiliza padrões fixos de palavras-chave e regex; não há NLU avançado.
 * **Contexto básico**: ainda não suporta memória de contexto para perguntas encadeadas.
 * **Consultas complexas**: falta suporte a junções multitas (joins) e filtros dinâmicos genéricos.
-* **Interface**: apenas notebook; como diferencial, pode-se criar UI web (Streamlit, Gradio) com campo de chat e histórico.
-* **Escalabilidade**: o uso de SQLite é adequado para POC, mas para grandes volumes recomenda-se migrar para SGBD mais robusto (PostgreSQL, MySQL).
 
 ## Diagrama de Arquitetura
 
