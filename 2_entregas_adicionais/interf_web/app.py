@@ -106,7 +106,7 @@ if st.button("Enviar") and pergunta:
         # 4.3) Gera resposta específica para média
         if 'media_dias' in df.columns:
             media = df['media_dias'].iloc[0]
-            resposta = f"🕒 Tempo médio de manutenção corretiva das bombas: {media:.2f} dias"
+            resposta = f" Tempo médio de manutenção corretiva das bombas: {media:.2f} dias"
         else:
             # Converte DataFrame para visualização
             resposta = f"**SQL:** `{sql}`"
