@@ -1,6 +1,6 @@
 # Interface Web — Agente Industrial Inteligente
 
-Esta pasta contém a **interface web** do Desafio_FIESC, desenvolvida em [Streamlit](https://streamlit.io/), que permite ao usuário interagir com o agente conversacional por meio de um chat simples, sem precisar usar Jupyter Notebook ou conhecer SQL.
+Esta pasta contém a **interface web** do Desafio_FIESC, desenvolvida em [Streamlit](https://streamlit.io/), que permite ao usuário interagir com o agente conversacional por meio de um chat simples.
 
 ---
 
