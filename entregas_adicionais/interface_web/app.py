@@ -92,7 +92,7 @@ if 'history' not in st.session_state:
     st.session_state.history = []
 
 # --- 4) Layout da página ---
-st.title("🤖 Agente Industrial Inteligente")
+st.title(" Agente Industrial Inteligente")
 
 pergunta = st.text_input("Faça sua pergunta:")
 if st.button("Enviar") and pergunta:
