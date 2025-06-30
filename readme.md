@@ -59,7 +59,7 @@ A estrutura do projeto está organizada em pastas temáticas, separando a entreg
 
 Em caso de dúvidas ou sugestões, contate:
 **Bryan Ambrósio**  
-[Seu e-mail ou link do GitHub, se desejar]
+basa0492@hotmail.com
 
 ---
 
