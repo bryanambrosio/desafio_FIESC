@@ -58,7 +58,7 @@ O **Desafio\_FIESC** consiste em desenvolver um agente conversacional que interp
 Abaixo, uma representação do fluxo de interação entre os componentes do agente:
 
 <p align="center">
-  <img src="Diagrama1.png" alt="Diagrama de Arquitetura" width="600"/>
+  <img src="Diagrama2.png" alt="Diagrama de Arquitetura" width="600"/>
 </p>
 
 1 - Usuário faz perguntas em linguagem natural;
