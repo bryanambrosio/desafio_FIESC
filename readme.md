@@ -30,6 +30,7 @@ A estrutura do projeto está organizada em pastas temáticas, separando a entreg
       Consulta de múltiplas tabelas, suportando joins, agregações e filtros temporais.
       - `app.py` (Streamlit)
       - `requirements.txt`
+      - `manutencao_industrial.db`
       - `readme.md`
 
     - 📂 **interf_web/**  
@@ -43,6 +44,7 @@ A estrutura do projeto está organizada em pastas temáticas, separando a entreg
       Versão com **memória de contexto** para perguntas encadeadas.
       - `app.py`
       - `requirements.txt`
+      - `manutencao_industrial.db`
       - `readme.md`
 
 ---
