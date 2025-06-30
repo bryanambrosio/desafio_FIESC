@@ -49,9 +49,9 @@ O **Desafio\_FIESC** consiste em desenvolver um agente conversacional que interp
 
 ## 4. Limitações e Sugestões de Melhoria
 
-* **Regras estáticas**: o parser utiliza padrões fixos de palavras-chave e regex; não há NLU avançado.
-* **Contexto básico**: ainda não suporta memória de contexto para perguntas encadeadas.
-* **Consultas complexas**: falta suporte a junções multitas (joins) e filtros dinâmicos genéricos.
+* **Regras estáticas**: o parser utiliza padrões fixos de palavras-chave e regex (regular expression – expressão regular); não há NLU (Natural Language Understanding) avançado.
+* **Contexto básico**: ainda não suporta memória de contexto para perguntas encadeadas (nesse notebook o foco foi o desenvolvimento prototipal, o incremento de memória de contexto foi explorado posteriormente).
+* **Consultas complexas**: falta suporte a consultas com múltiplas tabelas (nesse notebook o foco foi o desenvolvimento prototipal, o incremento de suporte a consultas com múltiplas tabelas foi explorado posteriormente).
 
 ## Diagrama de Arquitetura
 
@@ -61,10 +61,12 @@ Abaixo, uma representação do fluxo de interação entre os componentes do agen
   <img src="Diagrama1.png" alt="Diagrama de Arquitetura" width="600"/>
 </p>
 
-1 - Usuário faz perguntas em linguagem natural.
+1 - Usuário faz perguntas em linguagem natural;
 
-2 - A UI (notebook ou web) recebe e exibe tanto a pergunta quanto a resposta.
+2 - A UI (notebook ou web) recebe e exibe tanto a pergunta quanto a resposta;
 
-3 - O Parser NL→SQL traduz NL em SQL, consultando e atualizando a Memória de Contexto para manter o histórico de entidades (como último ID de ordem).
-
-4 - O Executor SQL recebe a query pronta e a executa no SQLite Database, retornando os resultados para a UI
+3 - O Parser NL→SQL traduz NL em SQL.
+   3.1 - Versão básica (notebook obrigatório): apenas regras de conversão NL → SQL.
+   3.2 - Versão avançada (entrega adicional): também consulta / atualiza a Memória de Contexto (ex.: guarda o último ID de ordem) para responder perguntas encadeadas.
+   
+4 - O Executor SQL recebe a query pronta e a executa no SQLite Database, retornando os resultados para a UI.
