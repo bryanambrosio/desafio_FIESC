@@ -115,7 +115,7 @@ def nl_to_sql(query: str, context: dict) -> Tuple[str, dict]:
     return ("", ctx)
 
 # --- 4) Layout da página ---
-st.title("🤖 Agente Industrial Inteligente — Multitabela + Memória de Contexto")
+st.title(" Agente Industrial Inteligente — Multitabela + Memória de Contexto")
 
 pergunta = st.text_input("Faça sua pergunta:")
 
